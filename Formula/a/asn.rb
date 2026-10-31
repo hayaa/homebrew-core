@@ -28,6 +28,8 @@ class Asn < Formula
     depends_on "bind" # for `host`
   end
 
+  deny_network_access!
+
   def install
     bin.install "asn"
     man1.install "asn.1"
